@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel = "icon" src="img/slogo.png" type = "image/x-icon">
+    <link rel = "icon" src ="img/slogo.png" type = "image/x-icon">
+    <title>ChickenINN Order</title>
+
+    <script src="/scripts/cart.js"async></script>
+    <script src="/scripts/app.js"async></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.png" alt="">
+        </div>
+        <div class="form">
+            <form>
+                <input type="text" id="phone" name="phone" placeholder="search here...">
+            </form>
+        </div>
+        <div class="icons">
+            <span><i class="fa fa-list" aria-hidden="true"></i></span>
+        </div>
+        
+    </header>
+
+    <div id="pbar"></div>
+            <div class="side">
+                <ul>
+                    <li><a href="/menu/home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><a href="food.html"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+    <section>
+        <div class="main">
+            <div class="left">
+                <div class="imgCard">
+                    <img src="/img/ff.jpg" alt="">
+                </div>
+                <div class="menuItems">
+                    <ul>
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Main Dish</a></li>
+                        <li><a href="#">Dinner</a></li>
+                        <li><a href="#">Snaks and Drinks</a></li>
+                        
+                    </ul>
+                </div>
+
+
+<!-- template -->
+
+
+<!-- template -->
+
+<!-- cards -->
+
+                <div class="cardHolder">
+
+                    
+                    <% menuItems.forEach(menuItem => { %>
+                        <div class="card">
+                            <div class="content">
+                                <div class="image">
+                                    <img class="dishImg" src="/img/uploads/<%= menuItem.img %>" alt="">
+                                </div>
+                                <div class="image overlay">
+                                    <p>add to order</p>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <h2 class="dishName"><%= menuItem.dishname %> </h2>
+                                <span>
+                                    <p class="text"><%= menuItem.dishdesc %></p>
+                                    <p class="price">Ksh: <%= menuItem.dishprice %></p>
+                                </span>
+                            </div>
+                        </div>
+
+                    <%} ) %> 
+                    
+
+
+                    
+                  
+                    
+                   
+
+                </div>
+                
+            </div>
+
+
+            <!-- right side -->
+            <div class="right">
+                <div class="container">
+                    <h1>My Order</h1>
+
+                    <div class="subtitle">
+
+                    <h2>Table Number 6</h2>
+                    <h3>Time : 1200hrs</h3>
+                    </div>
+                    <div class="cardContainer">
+                        
+                        <!-- <div class="smallCard">
+                            <div class="avatar">
+                                <img src="img/wings.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <p>4 Wings</p>
+                                <form>
+                                    <label for="quantity">X</label>
+                                    <input class="qtt" type="number" value="1" name="quantity" min="1" max="10">
+                                </form>
+                            </div>
+                            <div class="cost">
+                                <p class="price">Ksh 200</p>
+                                <button class="btn-delete" type="button"><i class="fa fa-trash-o" aria-hidden="true"></i> <span> remove</span></button>                                    
+                            </div>
+                                
+                        </div> -->
+                        
+                        
+    
+                        
+                        
+                    </div>
+                    
+                    <div class="subtotal">
+                        <p>SubTotal</p><p>Ksh 0</p>
+                    </div>
+
+                    <div class="promo">
+                        <form>
+                            <label for="promocode">PromoCode   </label>
+                            <input type="text" name="promocode" placeholder="eg: 23-45-245">
+                        </form>
+                    </div>
+                    <div class="total">
+                        <p>Total</p><p class="totalCost">0.00</p>
+                    </div>
+                    <button class="orderBtn"><span>order</span></button>
+                </div>
+                
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/javaScript/app.js" async></script>
+</body>
+</html>

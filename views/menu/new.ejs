@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/new.css">
+    <title>ChickenINN</title>
+</head>
+<body>
+    <div class="home">
+
+        <div class="header">
+            <h1>ChickenINN<span> Garden City Mall</span></h1>
+        </div>
+        <div class="text">
+            <div class="textHolder">
+                <p>Your are now on the admin panel. You can add a new menu item. 
+                </p>
+                    <button onclick="document.getElementById('modal-wrapper').style.display='block'" style="position: relative; top: 60%; left: 0; right: 0;" class="mainBtn">add new dish</button>
+            </div>
+
+            <div class="textHolder">
+                <p>Done editing? Navigate to home page. <br><br>
+                    
+                    <button><a href="/menu/home" class="mainBtn">home page</a></button>
+                </p>
+            </div>      
+        </div>
+    </div>
+
+    <form action="/menu" method="POST" enctype="multipart/form-data">
+        <%- include('_form_fields') %> 
+    </form>
+
+    <script>
+        var modal = document.getElementById('modal-wrapper');
+        window.onclick = function(event){
+            if(event.target == modal){
+                modal.style.display = "block";
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

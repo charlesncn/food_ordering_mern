@@ -1,0 +1,23 @@
+{
+  "name": "chickeninn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "cn",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "expree": "^0.1.6",
+    "mongoose": "^6.0.13",
+    "multer": "^1.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "description": ""
+}

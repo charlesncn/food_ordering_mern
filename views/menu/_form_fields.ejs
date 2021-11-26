@@ -1,0 +1,29 @@
+
+<div id="modal-wrapper" class="modal">
+    <div class="container">
+        <div class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close form">&times;</span>
+                <img src="/img/bg1.jpg" class="avtr">
+                <h2 style="text-align: center; font-weight: 700;">Adding New Dish</h2>
+            </div>
+
+                <input required value="<%=  menuCard.dishname %>" type="text" placeholder="enter dish name" name="dishname" id="dishname">
+                <input required value="<%= menuCard.dishdesc %>" type="text" placeholder="enter dish description" name="dishdesc" id="dishdesc">
+                <input value="<%= menuCard.dishprice %>" type="text" placeholder="enter dish price" name="dishprice" id="dishprice">
+                <select class="category" name="selectCategory">
+                    <option value="0">--Select Category--</option>
+                    <option value="1">Breafirst</option>
+                    <option value="2">Dinner</option>
+                    <option value="3">Main Dish</option>
+                    <option value="4">Snacks</option>
+                </select>
+                <label for="img">Select image:</label>
+                <input required type="file" id="imgSrc" name="imgSrc" accept="image/*">
+                <button type="submit" class="btnsubmit">save</button>
+                
+
+        
+        </div>
+    </div>
+</div>
