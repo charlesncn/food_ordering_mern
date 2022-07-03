@@ -1,5 +1,5 @@
 # food ordering mern
-#### web app using MERN Stack
+#### web app using MERN STACK
 
 ### Home Page Screen
 ![IMG](https://github.com/charlesncn/food_ordering_mern/blob/main/public/img/Screenshot%20from%202022-01-08%2020-58-08.png)
